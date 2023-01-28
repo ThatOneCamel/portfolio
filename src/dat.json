@@ -1,0 +1,46 @@
+{
+    "Yubikey":
+        {
+        "title": "Yubikey Project",
+        "flavorText": "A short description of the aforementioned project",
+        
+        "badge":
+            {
+            "status": "Postponed",
+            "color": "yellow"
+            },
+
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada enim ut magna lacinia, sed ornare arcu vulputate. Nullam sagittis, lectus vehicula eleifend facilisis, erat augue imperdiet sapien, quis pellentesque massa sapien eu sem. Orci varius natoque penatibus et magnis.",
+        "image": "/assets/xiv.jpg",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"}
+            ],
+
+        "id": 0
+        },
+
+    "GroupLink":
+        {
+        "title": "Group Link",
+        "flavorText": "An android application",
+        
+        "badge":
+            {
+            "status": "Postponed",
+            "color": "yellow"
+            },
+
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "/assets/xiv.jpg",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"},
+                {"text": "Twitter", "link": "https://github.com/ThatOneCamel", "color":"red"}
+            ],
+
+        "id": 1
+        }
+}
