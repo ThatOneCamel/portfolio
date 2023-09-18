@@ -7,15 +7,21 @@
         "badge":
             {
             "status": "Postponed",
-            "color": "yellow"
+            "color": "yellow",
+            "variant": "outline"
             },
 
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada enim ut magna lacinia, sed ornare arcu vulputate. Nullam sagittis, lectus vehicula eleifend facilisis, erat augue imperdiet sapien, quis pellentesque massa sapien eu sem. Orci varius natoque penatibus et magnis.",
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
         "image": "/assets/xiv.jpg",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher", "color": "green"}
             ],
 
         "id": 0
@@ -29,18 +35,248 @@
         "badge":
             {
             "status": "Postponed",
-            "color": "yellow"
+            "color": "yellow",
+            "variant": "outline"
             },
 
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "image": "/assets/xiv.jpg",
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/grouplinkBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "green"}
+            ],
+
+        "id": 1
+        },
+
+    "Critiq":
+        {
+        "title": "Critiq",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/critiqBanner.png",
+
+        "buttons":
+            [
+                {"text": "Website", "link": "https://critiq.tv/", "color":"red"}
+            ],
+
+        "id": 2
+        },
+
+        "CritiqLogic":
+        {
+        "title": "Critiq - Server Side Code",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+            "image": "/assets/critiqServerBanner.png",
 
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"},
-                {"text": "Twitter", "link": "https://github.com/ThatOneCamel", "color":"red"}
+                {"text": "Website", "link": "https://critiq.tv/", "color":"red"}
             ],
 
-        "id": 1
+        "id": 2
+        },
+
+    "Multio":
+        {
+        "title": "Mult.io",
+        "flavorText": "Math made fun?",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "An Android app that lets users test out their mathematical prowess. ", 
+            "Your score is based on how quickly and accurately you solve different math equations."
+            ],
+        "image": "/assets/multBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "green"},
+                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "green"}
+            ],
+
+        "id": 2
+        },
+
+    "Tumble":
+        {
+        "title": "Tumble",
+        "flavorText": "A Discord/Tumblr bot",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "A webscraper that retreives data from individual Tumblr blogs and send subscribers ",
+            "a Discord message when new posts are found and how many new posts have been made."
+            ],
+        "image": "/assets/tumbleBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "green"}
+            ],
+
+        "id": 2
+        },
+
+    "TumbleTweety":
+        {
+        "title": "Tumble - Twitter Edition",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/tweetyBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"},
+                {"text": "Website", "link": "https://critiq.tv/", "color":"red"}
+            ],
+
+        "id": 2
+        },
+
+    "ThisSite":
+        {
+        "title": "This Website.",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/siteBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "green"}
+            ],
+
+        "id": 2
+        },
+
+    "Quack":
+        {
+        "title": "Quack",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/xiv.jpg",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "green"}
+            ],
+
+        "id": 2
+        },
+
+    "EmblemMatch":
+        {
+        "title": "Emblem Match",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Stopped",
+            "color": "red",
+            "variant": "outline"
+            },
+
+        "description": 
+            [
+            "Website made in angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/xiv.jpg",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "green"}
+            ],
+
+        "id": 2
         }
 }
