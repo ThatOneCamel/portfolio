@@ -40,6 +40,7 @@ const useStyles = createStyles((theme) => ({
 export default function App() {
   const { classes } = useStyles()
 
+  //builds json information into objects
   var arr: Array<JSX.Element> = []
   for (const [, obj] of Object.entries(jsonData)) {
     arr.push(<ProjectDisplay project={obj}/>)

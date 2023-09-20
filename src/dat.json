@@ -1,55 +1,111 @@
 {
-    "Yubikey":
+    "XIVLauncher-YubiKey":
         {
-        "title": "Yubikey Project",
-        "flavorText": "A short description of the aforementioned project",
+        "title": "XIVLauncher - YubiKey Integration",
+        "flavorText": "Instant login, now Open Source",
         
         "badge":
             {
-            "status": "Postponed",
-            "color": "yellow",
-            "variant": "outline"
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
             },
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "My frustrations with 2FA now solved, I finally opted to bring this functionality to XIVLauncher so it can help all of maybe 7 people.\n",
+            "After some fumbling around with .NET MVC and fixing a 3rd-party library's dll importing... ",
+            "It works!\n\nPlug in your YubiKey, follow my guide, and have fun!"
             ],
-        "image": "/assets/xiv.jpg",
+        "image": "/assets/xivlauncher.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "gray"}
             ],
 
         "id": 0
         },
 
-    "GroupLink":
+    "YubiKey":
         {
-        "title": "Group Link",
-        "flavorText": "An android application",
+        "title": "YubiKey XIV",
+        "flavorText": "Adding instant login to FFXIV",
         
         "badge":
             {
-            "status": "Postponed",
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Built out of frustration with 2FA, logging into FFXIV multiple times a day, and server issues. ",
+            "I wanted to not have to open an authenticator app every time I logged in.\nSo now ",
+            "you can just log in automatically without compromising your account's security in any way.\n\n",
+            "Just plug in a YubiKey."
+            ],
+        "image": "/assets/xiv.jpg",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "gray"}
+            ],
+
+        "id": 0
+        },
+
+    "ModTheSims":
+        {
+        "title": "The Sims 2 - Mods",
+        "flavorText": "3700+ downloads and counting!",
+        
+        "badge":
+            {
+            "status": "Ongoing",
+            "color": "violet",
+            "variant": "outline"
+            },
+
+        "description": 
+            [
+            "When I can't find a mod that fills something I want, I make it!\nPublished mods include:\n",
+            "Deadly Werewolves - Gives werewolves some deadly interactions\n\n",
+            "Unpublished:\nGhoul Trait - Adds a new custom trait that gives Sims unique 'Ghoul' interactions\n\n",
+            "Tru Blood - Uses fanseelamb's Tru Blood case/bottles and makes them consumable by Vampires that cannot eat human foods\n(a behavior provided by MidgeTheTree's 'Vampires Can't Eat Food' mod)."
+            ],
+        "image": "/assets/ts2.jpg",
+
+        "buttons":
+            [
+                {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "gray"}
+            ],
+
+        "id": 2
+        },
+
+    "GroupLink":
+        {
+        "title": "Group Link",
+        "flavorText": "Collaborative schedule planner",
+        
+        "badge":
+            {
+            "status": "On Hold",
             "color": "yellow",
             "variant": "outline"
             },
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "Android app that lets groups cooperate to create and plan events."
             ],
         "image": "/assets/grouplinkBanner.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "gray"}
             ],
 
         "id": 1
@@ -69,7 +125,7 @@
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
+            "Website made in Angular to rank films side by side until ",
             "an order is established from most-liked to least-liked films. ",
             "Made by request of T.P."
             ],
@@ -77,16 +133,17 @@
 
         "buttons":
             [
-                {"text": "Website", "link": "https://critiq.tv/", "color":"red"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "gray"},
+                {"text": "Website", "link": "https://critiq.tv/", "color":"cyan"}
             ],
 
         "id": 2
         },
 
-        "CritiqLogic":
+    "CritiqLogic":
         {
         "title": "Critiq - Server Side Code",
-        "flavorText": "A tool to help rank your favorite films",
+        "flavorText": "The brains of the movie list importer",
         
         "badge":
             {
@@ -97,16 +154,43 @@
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "A bit of Python scripting that handles converting Letterboxd lists into a text-format compatible with ",
+            "the critiq website.\n\nFun fact: Was originally used to convert multiple webpages into PDFs and ",
+            "compile them into a singular one."
             ],
             "image": "/assets/critiqServerBanner.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"},
-                {"text": "Website", "link": "https://critiq.tv/", "color":"red"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "gray"}
+            ],
+
+        "id": 2
+        },
+
+    "ReceiptParser":
+        {
+        "title": "Receipt Reader",
+        "flavorText": "Image processing using Google Vision",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "My work on this project consisted of the following:\nAdding image upload functionality on the clientside\n\n",
+            "Creating a server and REST API\n\nManaging the uploading and processing of images\n\n",
+            "Handling requests and responses between the server and client."
+            ],
+        "image": "/assets/receipt.jpg",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
             ],
 
         "id": 2
@@ -115,7 +199,7 @@
     "Multio":
         {
         "title": "Mult.io",
-        "flavorText": "Math made fun?",
+        "flavorText": "Math made fun",
         
         "badge":
             {
@@ -126,15 +210,15 @@
 
         "description": 
             [
-            "An Android app that lets users test out their mathematical prowess. ", 
+            "An Android game that lets users test out their mathematical prowess. ", 
             "Your score is based on how quickly and accurately you solve different math equations."
             ],
         "image": "/assets/multBanner.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "green"},
-                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "gray"},
+                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "orange"}
             ],
 
         "id": 2
@@ -155,13 +239,13 @@
         "description": 
             [
             "A webscraper that retreives data from individual Tumblr blogs and send subscribers ",
-            "a Discord message when new posts are found and how many new posts have been made."
+            "a Discord message when new posts are found."
             ],
-        "image": "/assets/tumbleBanner.png",
+        "image": "/assets/tumble.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
             ],
 
         "id": 2
@@ -170,7 +254,7 @@
     "TumbleTweety":
         {
         "title": "Tumble - Twitter Edition",
-        "flavorText": "A tool to help rank your favorite films",
+        "flavorText": "A Twitter offshoot of Tumble",
         
         "badge":
             {
@@ -181,16 +265,13 @@
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "This bot keeps an eye out for Twitter posts from specific accounts and sends out notifications about the newest post(s)."
             ],
-        "image": "/assets/tweetyBanner.png",
+        "image": "/assets/tweety.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel", "color": "green"},
-                {"text": "Website", "link": "https://critiq.tv/", "color":"red"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "gray"}
             ],
 
         "id": 2
@@ -198,27 +279,26 @@
 
     "ThisSite":
         {
-        "title": "This Website.",
-        "flavorText": "A tool to help rank your favorite films",
+        "title": "This Website",
+        "flavorText": "What you're looking at now",
         
         "badge":
             {
-            "status": "Finished",
-            "color": "green",
-            "variant": "light"
+            "status": "Ongoing",
+            "color": "violet",
+            "variant": "outline"
             },
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "This site was made in React, uses TypeScript, and the Mantine library. ",
+            "Nothing fancy."
             ],
         "image": "/assets/siteBanner.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "gray"}
             ],
 
         "id": 2
@@ -227,7 +307,7 @@
     "Quack":
         {
         "title": "Quack",
-        "flavorText": "A tool to help rank your favorite films",
+        "flavorText": "A rubber-duck for your Mac",
         
         "badge":
             {
@@ -238,15 +318,13 @@
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "MacOS application that presented users with a digital rubber-duck; intended to remind users to stay on task in set intervals."
             ],
-        "image": "/assets/xiv.jpg",
+        "image": "/assets/quack.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "green"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "gray"}
             ],
 
         "id": 2
@@ -255,7 +333,7 @@
     "EmblemMatch":
         {
         "title": "Emblem Match",
-        "flavorText": "A tool to help rank your favorite films",
+        "flavorText": "A match-three puzzle game",
         
         "badge":
             {
@@ -266,15 +344,65 @@
 
         "description": 
             [
-            "Website made in angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+            "A match-three game, akin to Bejewled, where you make matches as quickly as possible to deplete your enemy's health bar. Made for mobile devices, developed in Unity."
+            ],
+        "image": "/assets/emblem.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "gray"}
+            ],
+
+        "id": 2
+        },
+
+    "ALovelyTale":
+        {
+        "title": "A Lovely Tale",
+        "flavorText": "A turn-based RPG battler",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "First attempt at game development. Developed using Unity, face off against 100 opponents in a gauntlet of turn-based battles. ",
+            "This game prioritized mobile devices and was designed to reflect that."
+            ],
+        "image": "/assets/lovely.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "gray"}
+            ],
+
+        "id": 2
+        },
+
+    "TBA":
+        {
+        "title": "FFLogs Aggregator",
+        "flavorText": "It's a secret",
+        
+        "badge":
+            {
+            "status": "In Progress",
+            "color": "cyan",
+            "variant": "outline"
+            },
+
+        "description": 
+            [
+            "TBA"
             ],
         "image": "/assets/xiv.jpg",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "green"}
             ],
 
         "id": 2

@@ -1,5 +1,4 @@
 import { UnstyledButton, Image, Flex, Box, Title, Text, Divider, Center } from '@mantine/core';
-import { IconBrandGithub, IconBrandTwitter } from '@tabler/icons-react';
 
 export default function BioSection() {
     return (

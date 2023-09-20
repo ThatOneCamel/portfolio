@@ -49,7 +49,7 @@ const ProjectCard = (props: CardData) => {
       {/* This Spoiler contains the description which is
         truncated at a certain length into a collapsible menu */}
       <Spoiler maxHeight={55} showLabel="More..." hideLabel="Hide">
-        <Text weight={500} ta="left">{props.desc}</Text>
+        <Text style={{whiteSpace: 'pre-line'}} weight={500} ta="left">{props.desc}</Text>
       </Spoiler>
 
 

@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard"
-import { IconBrandGithub, IconBrandTwitter, IconBrandGooglePlay } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandTwitter, IconBrandGooglePlay, IconDiamonds, IconBrowser } from '@tabler/icons-react';
 import LinkButton from './LinkButton';
 
 type ProjectInfo = {
@@ -21,6 +21,12 @@ const ProjectDisplay = (props: ProjectInfo) => {
                 break;
             case "PLAY STORE":
                 logo = <IconBrandGooglePlay/>
+                break;
+            case "MODTHESIMS":
+                logo = <IconDiamonds strokeWidth={1.5}/>
+                break;
+            case "WEBSITE":
+                logo = <IconBrowser/>
                 break;
             default:
                 logo = <span/>
