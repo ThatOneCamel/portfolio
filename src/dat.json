@@ -24,7 +24,7 @@
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "gray"}
             ],
 
-        "id": 0
+        "time": "2023"
         },
 
     "YubiKey":
@@ -53,7 +53,7 @@
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "gray"}
             ],
 
-        "id": 0
+        "time": "2022 - Current"
         },
 
     "ModTheSims":
@@ -70,7 +70,7 @@
 
         "description": 
             [
-            "When I can't find a mod that fills something I want, I make it!\nPublished mods include:\n",
+            "When I can't find a mod that does something I want, I make it!\nPublished mods include:\n",
             "Deadly Werewolves - Gives werewolves some deadly interactions\n\n",
             "Unpublished:\nGhoul Trait - Adds a new custom trait that gives Sims unique 'Ghoul' interactions\n\n",
             "Tru Blood - Uses fanseelamb's Tru Blood case/bottles and makes them consumable by Vampires that cannot eat human foods\n(a behavior provided by MidgeTheTree's 'Vampires Can't Eat Food' mod)."
@@ -80,9 +80,8 @@
         "buttons":
             [
                 {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
         },
 
     "GroupLink":
@@ -106,9 +105,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "gray"}
-            ],
+            ]
 
-        "id": 1
+        
         },
 
     "Critiq":
@@ -135,9 +134,9 @@
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "gray"},
                 {"text": "Website", "link": "https://critiq.tv/", "color":"cyan"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "CritiqLogic":
@@ -163,9 +162,8 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
         },
 
     "ReceiptParser":
@@ -191,9 +189,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "Multio":
@@ -219,9 +217,9 @@
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "gray"},
                 {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "orange"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "Tumble":
@@ -246,9 +244,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "TumbleTweety":
@@ -272,9 +270,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "ThisSite":
@@ -299,9 +297,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "Quack":
@@ -325,9 +323,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "EmblemMatch":
@@ -351,9 +349,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "ALovelyTale":
@@ -378,9 +376,9 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "gray"}
-            ],
+            ]
 
-        "id": 2
+        
         },
 
     "TBA":
@@ -403,8 +401,8 @@
 
         "buttons":
             [
-            ],
+            ]
 
-        "id": 2
+        
         }
 }

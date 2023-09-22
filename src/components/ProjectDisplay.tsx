@@ -54,6 +54,7 @@ const ProjectDisplay = (props: ProjectInfo) => {
         imgSrc={data.image}
         alpha={buttonArr.length > 0 ? buttonArr[0] : undefined}
         beta={buttonArr.length > 1 ? buttonArr[1] : undefined}
+        time={data.time}
         />
     )
 }

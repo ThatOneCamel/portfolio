@@ -1,20 +1,25 @@
-import { UnstyledButton, Image, Flex, Box, Title, Text, Divider, Center } from '@mantine/core';
-import React, { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-const path = require("../guides/yubikey.md");
+import GuideCard from "./GuideCard"
 
-export default function GuideDisplay() {
-    const [text, setText] = useState('')
-    useEffect(()=>{
-    fetch(path)
-        .then(response => {
-        return response.text()
-        })
-        .then(text => setText(text))
-    },[])
+type GuideInfo = {
+    project: any 
+    }
 
-    return (
-        <ReactMarkdown children={text}/>
-    );
+const GuideDisplay = (props: GuideInfo) => {
+    let data = props.project
+
+    return(
+        <GuideCard
+        name={data.title}
+        file={data.file}
+        status={data.badge.status}
+        statusColor={data.badge.color}
+        statusVariant={data.badge.variant}
+        desc={data.description}
+        imgSrc={data.image}
+        time={data.time}
+        />
+    )
 }
+
+export default GuideDisplay;
 

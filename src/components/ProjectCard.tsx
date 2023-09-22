@@ -1,6 +1,6 @@
 import { Card, Image, Title, Text, Badge, Group, Spoiler, Stack, Flex, BadgeVariant, Divider } from '@mantine/core';
+import { IconBrandTwitter } from '@tabler/icons-react';
 import { useHover } from '@mantine/hooks';
-
 
 type CardData = {
   imgSrc: string;
@@ -15,6 +15,7 @@ type CardData = {
   desc?: string;
   alpha?: JSX.Element;
   beta?: JSX.Element;
+  time?: string;
 
 }
 
@@ -22,7 +23,7 @@ const ProjectCard = (props: CardData) => {
   const {hovered, ref} = useHover();
 
   return(
-    <Card shadow="sm" p="md" radius="md" withBorder style={{maxWidth: 300}}>
+    <Card shadow="sm" p="md" radius="sm" withBorder style={{maxWidth: 300}}>
       <Card.Section>
           <Image
             src={props.imgSrc}
@@ -52,6 +53,14 @@ const ProjectCard = (props: CardData) => {
         <Text style={{whiteSpace: 'pre-line'}} weight={500} ta="left">{props.desc}</Text>
       </Spoiler>
 
+      <Group position="apart">
+        <Text size="sm" italic>{props.time}</Text>
+        <Group spacing={5}>
+          <IconBrandTwitter size={18} strokeWidth={1}/>
+          <IconBrandTwitter size={18} strokeWidth={1}/>
+          <IconBrandTwitter size={18} strokeWidth={1}/>
+        </Group>
+      </Group>
 
       <Card.Section>
         <Flex
@@ -65,9 +74,7 @@ const ProjectCard = (props: CardData) => {
           { props.beta! && props.beta }
         </Flex>
       </Card.Section>
-
-
-      </Card>
+    </Card>
   )
 }
 export default ProjectCard;

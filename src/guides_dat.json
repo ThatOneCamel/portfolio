@@ -1,0 +1,24 @@
+{
+    "YubiGuide":
+        {
+        "title": "FFXIV - YubiKey Setup",
+        "file": "/src/guides/yubikey.md",
+
+        "badge":
+            {
+            "status": "Technical",
+            "color": "green",
+            "variant": "outline"
+            },
+
+        "description": 
+            [
+            "My frustrations with 2FA now solved, I finally opted to bring this functionality to XIVLauncher so it can help all of maybe 7 people.\n",
+            "After some fumbling around with .NET MVC and fixing a 3rd-party library's dll importing... ",
+            "It works!\n\nPlug in your YubiKey, follow my guide, and have fun!"
+            ],
+        "image": "/assets/xiv.jpg",
+        "time": "7 - 10 minutes"
+
+        }
+}
