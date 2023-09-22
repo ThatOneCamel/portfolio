@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard"
-import { IconBrandGithub, IconBrandTwitter } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandTwitter, IconBrandGooglePlay, IconDiamonds, IconBrowser } from '@tabler/icons-react';
 import LinkButton from './LinkButton';
 
 type ProjectInfo = {
@@ -18,6 +18,15 @@ const ProjectDisplay = (props: ProjectInfo) => {
                 break;
             case "TWITTER":
                 logo = <IconBrandTwitter/>
+                break;
+            case "PLAY STORE":
+                logo = <IconBrandGooglePlay/>
+                break;
+            case "MODTHESIMS":
+                logo = <IconDiamonds strokeWidth={1.5}/>
+                break;
+            case "WEBSITE":
+                logo = <IconBrowser/>
                 break;
             default:
                 logo = <span/>
@@ -40,10 +49,12 @@ const ProjectDisplay = (props: ProjectInfo) => {
         flavorText={data.flavorText}
         status={data.badge.status}
         statusColor={data.badge.color}
+        statusVariant={data.badge.variant}
         desc={data.description}
         imgSrc={data.image}
         alpha={buttonArr.length > 0 ? buttonArr[0] : undefined}
         beta={buttonArr.length > 1 ? buttonArr[1] : undefined}
+        time={data.time}
         />
     )
 }

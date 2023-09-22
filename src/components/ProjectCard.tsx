@@ -1,30 +1,34 @@
-import { Card, Image, Title, Text, Badge, Group, Container, Spoiler, Stack } from '@mantine/core';
+import { Card, Image, Title, Text, Badge, Group, Spoiler, Stack, Flex, BadgeVariant, Divider } from '@mantine/core';
+import { IconBrandTwitter } from '@tabler/icons-react';
+import { useHover } from '@mantine/hooks';
 
 type CardData = {
   imgSrc: string;
 
   name: string;
   flavorText?: string;
+
   status?: string;
   statusColor?: string;
+  statusVariant?: BadgeVariant;
 
   desc?: string;
   alpha?: JSX.Element;
   beta?: JSX.Element;
+  time?: string;
 
 }
 
 const ProjectCard = (props: CardData) => {
+  const {hovered, ref} = useHover();
+
   return(
-    <Container mt="md" size={350} px={0}>
-    <Card shadow="sm" p="lg" radius="md" withBorder>
+    <Card shadow="sm" p="md" radius="sm" withBorder style={{maxWidth: 300}}>
       <Card.Section>
           <Image
-          src={props.imgSrc}
-          height={250}
-          //alt="XIVLauncher"
-          //placeholder={<Image src={testImage2} />}
-          //withPlaceholder
+            src={props.imgSrc}
+            height={200}
+            fit="cover"
           />
       </Card.Section>
 
@@ -32,32 +36,45 @@ const ProjectCard = (props: CardData) => {
       <Stack align="left" justify="flex-start" spacing={0}>
         <Title mt="md"  weight={600} order={3} ta="left"> {props.name} </Title>
         {props.imgSrc! && 
-          <Text fz="sm" ta="left">{props.flavorText}</Text>
+          <Text fz="sm" ta="left" weight={600} ref={ref} {... hovered ? {lineClamp: 0} : {lineClamp: 1}}>{props.flavorText}</Text>
         }
       </Stack>
       
       {/* This group contains the Badge and aligns it to the right */}
       { props.status! && 
-            <Group position="right" mt="xs" mb={2}>
-            <Badge color={props.statusColor} variant="outline"> {props.status} </Badge>
+          <Group position="right" mt={2} mb={2}>
+            <Badge color={props.statusColor} variant={props.statusVariant}> {props.status} </Badge>
           </Group>
       }
 
       {/* This Spoiler contains the description which is
         truncated at a certain length into a collapsible menu */}
-      <Spoiler maxHeight={120} showLabel="More..." hideLabel="Hide">
-        <Text weight={500} ta="left">{props.desc}</Text>
+      <Spoiler maxHeight={55} showLabel="More..." hideLabel="Hide">
+        <Text style={{whiteSpace: 'pre-line'}} weight={500} ta="left">{props.desc}</Text>
       </Spoiler>
 
-      <Group position="center" mt="md" grow>
-
-        { props.alpha }
-
-        { props.beta! && props.beta }
+      <Group position="apart">
+        <Text size="sm" italic>{props.time}</Text>
+        <Group spacing={5}>
+          <IconBrandTwitter size={18} strokeWidth={1}/>
+          <IconBrandTwitter size={18} strokeWidth={1}/>
+          <IconBrandTwitter size={18} strokeWidth={1}/>
+        </Group>
       </Group>
 
-      </Card>
-    </Container>
+      <Card.Section>
+        <Flex
+          direction={{ base: 'column', sm: 'row', 250: "row"}}
+          justify="center"
+          align="center"
+          pt="xs"
+        >
+          { props.alpha }
+          { props.beta! && <Divider size="xs" orientation="vertical" /> }
+          { props.beta! && props.beta }
+        </Flex>
+      </Card.Section>
+    </Card>
   )
 }
 export default ProjectCard;

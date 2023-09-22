@@ -1,4 +1,4 @@
-import { Button, Group } from '@mantine/core';
+import { Button } from '@mantine/core';
 type ButtonData = {
     text: string
     link: string
@@ -9,7 +9,6 @@ type ButtonData = {
   
 const LinkButton = (props: ButtonData)  => {
     return(
-        <Group position="center" mt="md" mb="xs" grow>
             <Button
                 component="a"
                 target="_blank"
@@ -17,12 +16,14 @@ const LinkButton = (props: ButtonData)  => {
                 href={props.link}
                 fz="lg"
                 color={props.color}
+                variant="subtle"
                 leftIcon={props.icon}
+                size="md"
+                radius="xs"
+                fullWidth
                 >
                 {props.text}
             </Button>
-
-    </Group>
 
     )
 }
