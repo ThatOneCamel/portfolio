@@ -18,6 +18,8 @@ const LinkButton = (props: ButtonData)  => {
                 color={props.color}
                 variant="subtle"
                 leftIcon={props.icon}
+                size="md"
+                radius="xs"
                 fullWidth
                 >
                 {props.text}

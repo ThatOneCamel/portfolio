@@ -53,16 +53,19 @@ const ProjectCard = (props: CardData) => {
       </Spoiler>
 
 
-      <Flex
-        direction={{ base: 'column', sm: 'row', 250: "row"}}
-        justify="center"
-        align="center"
-        pt="md" pb="xs"
-      >
-        { props.alpha }
-        { props.beta! && <Divider size="xs" orientation="vertical" mx={4} /> }
-        { props.beta! && props.beta }
-      </Flex>
+      <Card.Section>
+        <Flex
+          direction={{ base: 'column', sm: 'row', 250: "row"}}
+          justify="center"
+          align="center"
+          pt="xs"
+        >
+          { props.alpha }
+          { props.beta! && <Divider size="xs" orientation="vertical" /> }
+          { props.beta! && props.beta }
+        </Flex>
+      </Card.Section>
+
 
       </Card>
   )
