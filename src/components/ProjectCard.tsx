@@ -66,7 +66,7 @@ const ProjectCard = (props: CardData) => {
       {/* This Group contains the Time and Tag properties */}
       <Group position="apart">
         <Text size="sm" italic>{props.time}</Text>
-        <Group spacing={5}>
+        <Group spacing="xs">
           {/* For each tag, generate a HoverIcon */}
           {arr}
         </Group>
