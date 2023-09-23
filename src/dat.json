@@ -1,7 +1,7 @@
 {
     "XIVLauncher-YubiKey":
         {
-        "title": "XIVLauncher - YubiKey Integration",
+        "title": "XIVLauncher + YubiKey",
         "flavorText": "Instant login, now Open Source",
         
         "badge":
@@ -24,7 +24,14 @@
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "gray"}
             ],
 
-        "time": "2023"
+        "time": "2023",
+        "tags":
+            [
+                "DotNet",
+                "CSharp",
+                "YubiKey",
+                "Final Fantasy XIV"
+            ]
         },
 
     "YubiKey":
@@ -53,7 +60,15 @@
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "gray"}
             ],
 
-        "time": "2022 - Current"
+        "time": "2022",
+        "tags":
+            [
+                "Powershell",
+                "REST",
+                "Python",
+                "YubiKey",
+                "Final Fantasy XIV"
+            ]
         },
 
     "ModTheSims":
@@ -80,6 +95,12 @@
         "buttons":
             [
                 {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "gray"}
+            ],
+
+        "tags":
+            [
+                "Lua",
+                "The Sims 2"
             ]
 
         },
@@ -105,9 +126,15 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "gray"}
+            ],
+        
+        "tags":
+            [
+                "Java",
+                "Firebase",
+                "Android"
             ]
 
-        
         },
 
     "Critiq":
@@ -134,9 +161,17 @@
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "gray"},
                 {"text": "Website", "link": "https://critiq.tv/", "color":"cyan"}
+            ],
+        
+        "time": "2021",
+        "tags":
+            [
+                "Angular",
+                "TypeScript",
+                "JavaScript",
+                "REST"
             ]
 
-        
         },
 
     "CritiqLogic":
@@ -162,6 +197,12 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "gray"}
+            ],
+        "time": "2021",
+        "tags":
+            [
+                "REST",
+                "Python"
             ]
 
         },
@@ -188,9 +229,17 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
-            ]
+                {"text": "GitHub", "link": "https://github.com/USM-GROUP/ML-Receipt-Reader", "color": "gray"}
+            ],
 
+        "time": "2020",
+        "tags":
+            [
+                "React-Native",
+                "JavaScript",
+                "Python",
+                "REST"
+            ]
         
         },
 
@@ -217,8 +266,14 @@
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "gray"},
                 {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "orange"}
-            ]
+            ],
 
+        "time": "2020",
+        "tags":
+            [
+                "Java",
+                "Android"
+            ]
         
         },
 
@@ -244,6 +299,13 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
+            ],
+
+        "time": "2020",
+        "tags":
+            [
+                "Python",
+                "REST"
             ]
 
         
@@ -270,9 +332,15 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "gray"}
+            ],
+
+        "time": "2020",
+        "tags":
+            [
+                "Python",
+                "REST"
             ]
 
-        
         },
 
     "ThisSite":
@@ -297,8 +365,16 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "gray"}
-            ]
+            ],
 
+        "time": "2023 - Current",
+        "tags":
+            [
+                "React",
+                "TypeScript",
+                "HTML",
+                "CSS"
+            ]
         
         },
 
@@ -323,8 +399,14 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "gray"}
-            ]
+            ],
 
+        "time": "2018",
+        "tags":
+            [
+                "Swift",
+                "MacOS"
+            ]
         
         },
 
@@ -349,9 +431,15 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "gray"}
+            ],
+
+        "time": "2018",
+        "tags":
+            [
+                "CSharp",
+                "Unity"
             ]
 
-        
         },
 
     "ALovelyTale":
@@ -376,8 +464,14 @@
         "buttons":
             [
                 {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "gray"}
-            ]
+            ],
 
+        "time": "2018",
+        "tags":
+            [
+                "CSharp",
+                "Unity"
+            ]
         
         },
 

@@ -1,6 +1,7 @@
 import { Card, Image, Title, Text, Badge, Group, Spoiler, Stack, Flex, BadgeVariant, Divider } from '@mantine/core';
-import { IconBrandTwitter } from '@tabler/icons-react';
 import { useHover } from '@mantine/hooks';
+import { iconMap } from '../App';
+import HoverIcon from './HoverIcon';
 
 type CardData = {
   imgSrc: string;
@@ -17,10 +18,19 @@ type CardData = {
   beta?: JSX.Element;
   time?: string;
 
+  tags?: string[];
+
 }
 
 const ProjectCard = (props: CardData) => {
   const {hovered, ref} = useHover();
+
+  var arr: Array<JSX.Element> = []
+  props.tags?.forEach((icon) => {
+    if(iconMap.has(icon)){
+      arr.push(<HoverIcon name={icon} icon={iconMap.get(icon)!}/>)
+    };
+  });
 
   return(
     <Card shadow="sm" p="md" radius="sm" withBorder style={{maxWidth: 300}}>
@@ -53,12 +63,12 @@ const ProjectCard = (props: CardData) => {
         <Text style={{whiteSpace: 'pre-line'}} weight={500} ta="left">{props.desc}</Text>
       </Spoiler>
 
+      {/* This Group contains the Time and Tag properties */}
       <Group position="apart">
         <Text size="sm" italic>{props.time}</Text>
         <Group spacing={5}>
-          <IconBrandTwitter size={18} strokeWidth={1}/>
-          <IconBrandTwitter size={18} strokeWidth={1}/>
-          <IconBrandTwitter size={18} strokeWidth={1}/>
+          {/* For each tag, generate a HoverIcon */}
+          {arr}
         </Group>
       </Group>
 
