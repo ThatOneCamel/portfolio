@@ -7,6 +7,7 @@ import {
   IconBrowser,
 } from "@tabler/icons-react";
 import LinkButton from "./LinkButton";
+import { iconMap } from "../App";
 
 type ProjectInfo = {
   project: any;
@@ -29,7 +30,7 @@ const ProjectDisplay = (props: ProjectInfo) => {
         logo = <IconBrandGooglePlay />;
         break;
       case "MODTHESIMS":
-        logo = <IconDiamonds strokeWidth={1.5} />;
+        logo = iconMap.has("TS2Button") ? iconMap.get("TS2Button")! : <IconDiamonds strokeWidth={1.5}/>;
         break;
       case "WEBSITE":
         logo = <IconBrowser />;

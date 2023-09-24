@@ -20,7 +20,7 @@ const HoverIcon = (props: IconData) => {
       opened={opened}>
       <Popover.Target>
         <Box onMouseEnter={open} onMouseLeave={close}>
-          <IconContext.Provider value={{ color: "white" }}>
+          <IconContext.Provider value={{ color: "light" }}>
             {props.icon}
           </IconContext.Provider>
         </Box>
