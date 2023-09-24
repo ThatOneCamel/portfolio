@@ -1,5 +1,5 @@
 import { MantineProvider, ColorSchemeProvider, ColorScheme, createStyles, Tabs, Flex, Center, Container } from '@mantine/core';
-import { useColorScheme } from '@mantine/hooks';
+import { useColorScheme, useLocalStorage } from '@mantine/hooks';
 import { useState } from 'react';
 
 import ProjectDisplay from "./components/ProjectDisplay";
@@ -12,142 +12,98 @@ import { ReactComponent as Dalamud } from './components/icons/dalamud.svg';
 import { ReactComponent as Plumbob } from './components/icons/plumbob.svg';
 
 import {
-  DiAndroid,
-  DiApple,
-  DiCss3,
-  DiGit,
-  DiHtml5,
-  DiNodejs,
-  DiRust,
-  DiSwift,
-  DiVisualstudio
-  } from "react-icons/di";
-
-import {
   FaBuildingColumns,
+  FaCloud,
   FaJava,
   FaRegBuilding
   } from "react-icons/fa6";
 
-import { BiLogoGoLang, BiLogoUnity } from "react-icons/bi";
-
 import {
-  IconApi,
-  IconBrandCSharp,
-  IconBrandCpp,
-  IconLetterC
-  } from '@tabler/icons-react';
-
-import {
+  SiAndroid,
   SiAngular,
   SiAdobephotoshop,
+  SiApple,
+  SiC,
+  SiCplusplus,
+  SiCsharp,
+  SiCss3,
   SiDjango,
   SiDocker,
   SiDotnet,
   SiFirebase,
+  SiGit,
   SiGrafana,
+  SiGo,
   SiGodotengine,
+  SiHtml5,
   SiJavascript,
   SiKubernetes,
   SiLua,
   SiMicrosoftazure,
+  SiNodedotjs,
   SiPowershell,
   SiPrometheus,
   SiPython,
   SiReact,
+  SiRust,
   SiSketch,
+  SiSwift,
   SiTypescript,
+  SiUnity,
+  SiVisualstudio,
   SiXcode,
-  SiYubico
+  SiYubico,
   } from "react-icons/si";
 
-//let iconMap = new Map<string, IconData>();
-//iconMap.set("Angular", {name: "Angular", icon: <HoverIcon name='Angular' icon={<SiAngular/>}/>})
-
 export const iconMap = new Map<string, JSX.Element>([
-  ["Final Fantasy XIV", <Dalamud fill="white" width="1.5em" height="1.5em"/>],
-  ["The Sims 2", <Plumbob strokeWidth={7} width="1.5em" height="1.5em"/>],
-
-  ["Android",      <DiAndroid/>],
-  ["CSS",          <DiCss3/>],
-  ["Git",          <DiGit/>],
-  ["HTML",         <DiHtml5/>],
-  ["iOS",          <DiApple/>],
-  ["MacOS",        <DiApple/>],
-  ["NodeJS",       <DiNodejs/>],
-  ["Rust",         <DiRust/>],
-  ["Swift",        <DiSwift/>],
-  ["VisualStudio", <DiVisualstudio/>],
+  ["Final Fantasy XIV", <Dalamud fill="#F03E3E" width="1.5em" height="1.5em"/>],
+  ["The Sims 2", <Plumbob stroke="#40C057" fill="none" width="1.5em" height="1.5em"/>],
+  ["TS2Button", <Plumbob stroke="#FFFFFF" fill="none" width="1.5em" height="1.5em"/>],
 
   ["Java",         <FaJava/>],
-  ["University",   <FaBuildingColumns/>],
   ["Office",       <FaRegBuilding/>],
+  ["REST",         <FaCloud/>],
+  ["University",   <FaBuildingColumns/>],
 
-  ["Go",           <BiLogoGoLang/>],
-  ["Unity",        <BiLogoUnity/>],
-
-  ["REST",         <IconApi/>],
-  ["Cpp",          <IconBrandCpp/>],
-  ["CSharp",       <IconBrandCSharp/>],
-  ["C",            <IconLetterC/>],
-
+  ["Android",      <SiAndroid/>],
   ["Angular",      <SiAngular/>],
-  ["Photoshop",    <SiAdobephotoshop/>],
+  ["Azure",        <SiMicrosoftazure/>],
+  ["C",            <SiC/>],
+  ["Cpp",          <SiCplusplus/>],
+  ["CSharp",       <SiCsharp/>],
+  ["CSS",          <SiCss3/>],
   ["Django",       <SiDjango/>],
   ["Docker",       <SiDocker/>],
   ["DotNet",       <SiDotnet size="24"/>],
   ["Firebase",     <SiFirebase/>],
+  ["Git",          <SiGit/>],
+  ["Go",           <SiGo/>],
   ["Grafana",      <SiGrafana/>],
   ["Godot",        <SiGodotengine/>],
+  ["HTML",         <SiHtml5/>],
+  ["iOS",          <SiApple/>],
   ["JavaScript",   <SiJavascript/>],
   ["Kubernetes",   <SiKubernetes/>],
   ["Lua",          <SiLua/>],
-  ["Azure",        <SiMicrosoftazure/>],
+  ["MacOS",        <SiApple/>],
+  ["NodeJS",       <SiNodedotjs/>],
+  ["Photoshop",    <SiAdobephotoshop/>],
   ["Powershell",   <SiPowershell/>],
   ["Prometheus",   <SiPrometheus/>],
   ["Python",       <SiPython/>],
   ["React",        <SiReact/>],
   ["React-Native", <SiReact/>],
+  ["Rust",         <SiRust/>],
   ["Sketch",       <SiSketch/>],
+  ["Swift",        <SiSwift/>],
   ["TypeScript",   <SiTypescript/>],
+  ["Unity",        <SiUnity/>],
+  ["VisualStudio", <SiVisualstudio/>],
   ["Xcode",        <SiXcode/>],
   ["YubiKey",      <SiYubico/>],
 ]);
-const useStyles = createStyles((theme) => ({
-  container: {
-    height: "auto",
-    backgroundColor: theme.colors.blue[6],
-
-    // Media query with value from theme
-    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
-      backgroundColor: theme.colors.pink[6],
-    },
-
-    // Static media query
-    '@media (max-width: 800px)': {
-      backgroundColor: theme.colors.orange[6],
-    },
-  },
-
-  container2: {
-    height: "auto",
-    backgroundColor: theme.colors.blue[6],
-
-    // Media query with value from theme
-    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
-      backgroundColor: theme.colors.green[6],
-    },
-
-    // Static media query
-    '@media (max-width: 800px)': {
-      backgroundColor: theme.colors.orange[6],
-    },
-  },
-}));
 
 export default function App() {
-  const { classes } = useStyles()
-
   //builds json information into objects
   var arr: Array<JSX.Element> = []
   for (const [, obj] of Object.entries(jsonData)) {
@@ -160,7 +116,12 @@ export default function App() {
   }
 
   const preferredColorScheme = useColorScheme();
-  const [colorScheme, setColorScheme] = useState<ColorScheme>(preferredColorScheme);
+  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+    key: 'mantine-color-scheme',
+    defaultValue: 'light',
+    getInitialValueInEffect: true,
+  });
+
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
   
@@ -168,7 +129,7 @@ export default function App() {
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme}}>
         <BioSection/>
-        <Tabs defaultValue="projects" color="green" mt="xs">
+        <Tabs defaultValue="projects" color="green" mt="xs" pb="lg">
           <Center>
           <Tabs.List grow position="center" w={{sm: "50%", base: "90%"}} mb="sm">
             <Tabs.Tab value='projects'>Projects</Tabs.Tab>
