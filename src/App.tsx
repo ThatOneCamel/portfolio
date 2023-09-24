@@ -1,6 +1,5 @@
 import { MantineProvider, ColorSchemeProvider, ColorScheme, createStyles, Tabs, Flex, Center, Container } from '@mantine/core';
 import { useColorScheme, useLocalStorage } from '@mantine/hooks';
-import { useState } from 'react';
 
 import ProjectDisplay from "./components/ProjectDisplay";
 import jsonData from "./dat.json";
@@ -115,7 +114,6 @@ export default function App() {
     guideArr.push(<GuideDisplay project={obj}/>)
   }
 
-  const preferredColorScheme = useColorScheme();
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'mantine-color-scheme',
     defaultValue: 'light',
