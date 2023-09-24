@@ -6,9 +6,9 @@
         
         "badge":
             {
-            "status": "Finished",
-            "color": "green",
-            "variant": "light"
+            "status": "Ongoing",
+            "color": "violet",
+            "variant": "outline"
             },
 
         "description": 
@@ -21,10 +21,10 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "green"}
             ],
 
-        "time": "2023",
+        "time": "2023 - Present",
         "tags":
             [
                 "DotNet",
@@ -57,14 +57,13 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "green"}
             ],
 
         "time": "2022",
         "tags":
             [
                 "Powershell",
-                "REST",
                 "Python",
                 "YubiKey",
                 "Final Fantasy XIV"
@@ -94,9 +93,9 @@
 
         "buttons":
             [
-                {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "gray"}
+                {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "violet"}
             ],
-
+        "time": "2018 - Present",
         "tags":
             [
                 "Lua",
@@ -125,9 +124,9 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "green"}
             ],
-        
+        "time": "2018",
         "tags":
             [
                 "Java",
@@ -159,17 +158,17 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "gray"},
-                {"text": "Website", "link": "https://critiq.tv/", "color":"cyan"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "green"},
+                {"text": "Website", "link": "https://critiq.tv/", "color":"light"}
             ],
         
-        "time": "2021",
+        "time": "2020 - 2023",
         "tags":
             [
                 "Angular",
                 "TypeScript",
                 "JavaScript",
-                "REST"
+                "REST API"
             ]
 
         },
@@ -196,12 +195,12 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "green"}
             ],
-        "time": "2021",
+        "time": "2020 - 2023",
         "tags":
             [
-                "REST",
+                "REST API",
                 "Python"
             ]
 
@@ -229,7 +228,7 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/USM-GROUP/ML-Receipt-Reader", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/USM-GROUP/ML-Receipt-Reader", "color": "green"}
             ],
 
         "time": "2020",
@@ -238,7 +237,7 @@
                 "React-Native",
                 "JavaScript",
                 "Python",
-                "REST"
+                "REST API"
             ]
         
         },
@@ -264,11 +263,11 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "gray"},
-                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "orange"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "green"},
+                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "light"}
             ],
 
-        "time": "2020",
+        "time": "2019 - 2020",
         "tags":
             [
                 "Java",
@@ -298,14 +297,14 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "green"}
             ],
 
-        "time": "2020",
+        "time": "2019 - 2021",
         "tags":
             [
                 "Python",
-                "REST"
+                "REST API"
             ]
 
         
@@ -331,14 +330,14 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "green"}
             ],
 
-        "time": "2020",
+        "time": "2021",
         "tags":
             [
                 "Python",
-                "REST"
+                "REST API"
             ]
 
         },
@@ -364,10 +363,10 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "green"}
             ],
 
-        "time": "2023 - Current",
+        "time": "2023 - Present",
         "tags":
             [
                 "React",
@@ -398,7 +397,7 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "green"}
             ],
 
         "time": "2018",
@@ -430,10 +429,10 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "green"}
             ],
 
-        "time": "2018",
+        "time": "2017",
         "tags":
             [
                 "CSharp",
@@ -456,17 +455,17 @@
 
         "description": 
             [
-            "First attempt at game development. Developed using Unity, face off against 100 opponents in a gauntlet of turn-based battles. ",
+            "Developed using Unity, face off against 100 opponents in a gauntlet of turn-based battles. ",
             "This game prioritized mobile devices and was designed to reflect that."
             ],
         "image": "/assets/lovely.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "green"}
             ],
 
-        "time": "2018",
+        "time": "2017",
         "tags":
             [
                 "CSharp",
