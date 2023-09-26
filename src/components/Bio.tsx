@@ -144,7 +144,7 @@ export default function BioSection() {
           </Text>
 
           <Text fw={600} mt={0}>
-            In my free time I can be found playing video games or drawing. I
+            Otherwise, I can be found playing video games or drawing. I
             hope this page proves informative or useful
           </Text>
         </Flex>
