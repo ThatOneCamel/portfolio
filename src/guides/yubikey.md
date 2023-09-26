@@ -39,7 +39,7 @@ Let's show you how to set this up.
 
 First thing you'll need is a YubiKey device that has support for `OATH TOTP` (Time-based One Time Password). This is a standard that is used for two-factor Authentication (2FA) to generate the one-time six-digit passcodes you may be accustomed to from apps like Google Authenticator. Both the `YubiKey 5` and `YubiKey 4` series are compatible with `OATH TOTP`.
 
-![YubiKey feature comparison](images/2fa_yubi.png)
+![YubiKey feature comparison](yubikey_assets/2fa_yubi.png)
 
 For this tutorial I'll be using a `YubiKey 5C NFC`. Once you have your YubiKey ready, go on to the next step.
 
@@ -49,19 +49,19 @@ You will need to enable 2FA on your Square Enix account. **If you already have 2
 
 Visit the MogStation website and then click on the `One-Time Password` link.
 
-![MogStation 2FA Step 1](images/2fa_flow_0.png)
+![MogStation 2FA Step 1](yubikey_assets/2fa_flow_0.png)
 
 You will then be presented with the following page:
-![MogStation 2FA Step 2](images/2fa_flow_1.png)
+![MogStation 2FA Step 2](yubikey_assets/2fa_flow_1.png)
 
 Click the `Software Authenticator` option
 
 You will then see the following page:
-![MogStation 2FA Step 3](images/2fa_flow_2.png)
+![MogStation 2FA Step 3](yubikey_assets/2fa_flow_2.png)
 
 Please click `Unable to Scan QR Code` and then copy down the code on the next page.
 
-![MogStation 2FA Step 4](images/2fa_flow_3.png)
+![MogStation 2FA Step 4](yubikey_assets/2fa_flow_3.png)
 
 ## **Do NOT share this QR Code or key with anyone. No one should EVER be asking for either of them. Treat the two like very important passwords and do NOT give them to *anyone*.**
 
@@ -73,7 +73,7 @@ This `Authentication Key` is what we will be using to create our authenticator '
 
 Open XIVLauncher and navigate to the `Settings` menu, then click `Enable XL Authenticator app/OTP macro support` *AND* `Enable YubiKey Authentication`
 
-![Enable OTP and YubiKey](images/2fa_otp_settings.png)
+![Enable OTP and YubiKey](yubikey_assets/2fa_otp_settings.png)
 
 ### Step 3
 
@@ -86,7 +86,7 @@ Paste or type in your `Authentication Key` from MogStation into the field that p
 - Optionally, also toggle the `Require Touch?` checkbox if you'd like to have to touch your YubiKey before being logged in.
 - You also will have needed to have logged in using XIVLauncher at least once before. This will create a credential on your YubiKey using your `currently selected account` in XIVLauncher
 
-![Setup YubiKey Prompt](images/2fa_otp_setup.png)
+![Setup YubiKey Prompt](yubikey_assets/2fa_otp_setup.png)
 
 - Make sure to also add your `Authentication Key` to an application like `Authy`, `Microsfot Authenticator`, or your preferred software authenticator.
 
@@ -100,13 +100,13 @@ Paste or type in your `Authentication Key` from MogStation into the field that p
 
 Optionally enable `Require Touch`
 
-![Yubico Authenticator - Add](images/2fa_yubico_add.png)
+![Yubico Authenticator - Add](yubikey_assets/2fa_yubico_add.png)
 
 Finally press `Add account`
 
 You will then be presented with a screen displaying your newly added account and 2FA codes as they are generated. *If you made your YubiKey responsive to touch you may need to double click the newly made account; this will prompt you to touch your YubiKey and then you will see your 2FA code upon doing so.*
 
-![Yubico Authenticator - View](images/2fa_yubico_view.png)
+![Yubico Authenticator - View](yubikey_assets/2fa_yubico_view.png)
 
 Afterwards add your `Authentication Key` to a separate software authenticator like `Google Authenticator`.
 
@@ -126,23 +126,23 @@ With that you're fully setup and should be ready to login to Final Fantasy XIV w
 
 Open XIVLauncher and login like normal until you are at presented with the following window:
 
-![XIVLauncher OTP](images/2fa_otp_xivlauncher.png)
+![XIVLauncher OTP](yubikey_assets/2fa_otp_xivlauncher.png)
 
 (If you aren't seeing the above, make sure that the following settings are checked)
 
-![Use OTP Setting](images/2fa_otp_use.png)
+![Use OTP Setting](yubikey_assets/2fa_otp_use.png)
 
 If your YubiKey is inserted, and you opted to not require touch, then you should be logged in automatically!
 
 Otherwise, you will be presented with the following:
 
-![YubiKey Found](images/2fa_otp_yubikey.png)
+![YubiKey Found](yubikey_assets/2fa_otp_yubikey.png)
 
 If you do as this prompt says and touch your YubiKey, you should then be logged in successfully!
 
 - If you leave your YubiKey untouched for too long, you will see the following message:
 
-![YubiKey Timeout](images/2fa_otp_timeout.png)
+![YubiKey Timeout](yubikey_assets/2fa_otp_timeout.png)
 
 > **NOTE:** If at any point you are presented with an error message stating that your one-time password (OTP) is invalid, please double check your `Authentication Key` and retry this tutorial starting from `Step 3`.
 
