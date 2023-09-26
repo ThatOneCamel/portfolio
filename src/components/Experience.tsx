@@ -93,6 +93,8 @@ export default function ExperienceSection() {
         </Stack>
       </Box>
 
+      <Divider w="90%" mx="5%"></Divider>
+
       <Box bg={dark ? "#504C97" : "white"} w="100%" py={20}>
         <Stack mx={{ base: 5, sm: "10%" }}>
           <Title fw={900} ta={{ base: "center", sm: "left" }} order={2}>
