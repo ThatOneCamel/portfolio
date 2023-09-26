@@ -1,5 +1,5 @@
-import { MantineProvider, ColorSchemeProvider, ColorScheme, createStyles, Tabs, Flex, Center, Container } from '@mantine/core';
-import { useColorScheme, useLocalStorage } from '@mantine/hooks';
+import { MantineProvider, ColorSchemeProvider, ColorScheme, Tabs, Flex, Center, Container } from '@mantine/core';
+import { useLocalStorage } from '@mantine/hooks';
 
 import ProjectDisplay from "./components/ProjectDisplay";
 import jsonData from "./dat.json";

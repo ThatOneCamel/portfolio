@@ -1,17 +1,11 @@
 import {
   createStyles,
-  ActionIcon,
   useMantineColorScheme,
-  UnstyledButton,
-  Image,
   Flex,
   Box,
   Title,
-  Text,
   Divider,
-  Group,
   Stack,
-  Container,
 } from "@mantine/core";
 
 import LabeledIcon from "./LabeledIcon";
@@ -43,7 +37,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 }));
 
 export default function ExperienceSection() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   const dark = colorScheme === "dark";
   const { classes } = useStyles();
 
