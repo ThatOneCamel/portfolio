@@ -21,7 +21,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     backgroundColor:
       theme.colorScheme === "dark"
         ? theme.colors.dark[7]
-        : theme.colors.gray[1],
+        : theme.colors.gray[0],
     //color: theme.colorScheme === "dark" ? theme.primaryColor : theme.colors.green
   },
 
@@ -93,7 +93,7 @@ export default function BioSection() {
           </UnstyledButton>
         </Box>
 
-        <Divider color="none" size="xs" orientation="vertical" />
+        <Divider size="xs" orientation="vertical" />
 
         <Flex
           mih={50}
