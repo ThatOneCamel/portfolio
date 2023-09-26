@@ -1,5 +1,4 @@
-import { Group, Title, Text } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import { Group, Title } from "@mantine/core";
 import { IconContext } from "react-icons";
 import { iconMap } from "../App";
 
@@ -10,8 +9,6 @@ type IconData = {
 };
 
 const LabeledIcon = (props: IconData) => {
-  const [opened, { close, open }] = useDisclosure(false);
-
   return (
     <Group>
       <IconContext.Provider

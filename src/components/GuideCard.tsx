@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import {
-  Tooltip,
-  Button,
   Card,
   Image,
   Title,
