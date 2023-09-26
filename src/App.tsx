@@ -1,47 +1,109 @@
-import { MantineProvider, createStyles, Tabs, Flex, Center, Container } from '@mantine/core';
+import { MantineProvider, ColorSchemeProvider, ColorScheme, createStyles, Tabs, Flex, Center, Container } from '@mantine/core';
+import { useColorScheme, useLocalStorage } from '@mantine/hooks';
+
 import ProjectDisplay from "./components/ProjectDisplay";
 import jsonData from "./dat.json";
 import jsonGuideData from "./guides_dat.json";
 import BioSection from './components/Bio';
+import ExperienceSection from './components/Experience';
 import GuideDisplay from './components/GuideDisplay';
 
-const useStyles = createStyles((theme) => ({
-  container: {
-    height: "auto",
-    backgroundColor: theme.colors.blue[6],
+import { ReactComponent as Dalamud } from './components/icons/dalamud.svg';
+import { ReactComponent as Plumbob } from './components/icons/plumbob.svg';
 
-    // Media query with value from theme
-    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
-      backgroundColor: theme.colors.pink[6],
-    },
+import {
+  FaBuildingColumns,
+  FaCloud,
+  FaJava,
+  FaRegBuilding
+  } from "react-icons/fa6";
 
-    // Static media query
-    '@media (max-width: 800px)': {
-      backgroundColor: theme.colors.orange[6],
-    },
-  },
+import {
+  SiAndroid,
+  SiAngular,
+  SiAdobephotoshop,
+  SiApple,
+  SiC,
+  SiCplusplus,
+  SiCsharp,
+  SiCss3,
+  SiDjango,
+  SiDocker,
+  SiDotnet,
+  SiFirebase,
+  SiGit,
+  SiGrafana,
+  SiGo,
+  SiGodotengine,
+  SiHtml5,
+  SiJavascript,
+  SiKubernetes,
+  SiLua,
+  SiMicrosoftazure,
+  SiNodedotjs,
+  SiPowershell,
+  SiPrometheus,
+  SiPython,
+  SiReact,
+  SiRust,
+  SiSketch,
+  SiSwift,
+  SiTypescript,
+  SiUnity,
+  SiVisualstudio,
+  SiXcode,
+  SiYubico,
+  } from "react-icons/si";
 
-  container2: {
-    height: "auto",
-    backgroundColor: theme.colors.blue[6],
+export const iconMap = new Map<string, JSX.Element>([
+  ["Final Fantasy XIV", <Dalamud fill="#F03E3E" width="1.5em" height="1.5em"/>],
+  ["The Sims 2", <Plumbob stroke="#40C057" fill="none" width="1.5em" height="1.5em"/>],
+  ["TS2Button", <Plumbob stroke="#FFFFFF" fill="none" width="1.5em" height="1.5em"/>],
 
-    // Media query with value from theme
-    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
-      backgroundColor: theme.colors.green[6],
-    },
+  ["Java",         <FaJava/>],
+  ["Office",       <FaRegBuilding/>],
+  ["REST",         <FaCloud/>],
+  ["University",   <FaBuildingColumns/>],
 
-    // Static media query
-    '@media (max-width: 800px)': {
-      backgroundColor: theme.colors.orange[6],
-    },
-  },
-}));
-
-
+  ["Android",      <SiAndroid/>],
+  ["Angular",      <SiAngular/>],
+  ["Azure",        <SiMicrosoftazure/>],
+  ["C",            <SiC title="C programming language" size="2em"/>],
+  ["Cpp",          <SiCplusplus/>],
+  ["CSharp",       <SiCsharp/>],
+  ["CSS",          <SiCss3/>],
+  ["Django",       <SiDjango/>],
+  ["Docker",       <SiDocker/>],
+  ["DotNet",       <SiDotnet size="1.8em"/>],
+  ["Firebase",     <SiFirebase/>],
+  ["Git",          <SiGit/>],
+  ["Go",           <SiGo/>],
+  ["Grafana",      <SiGrafana/>],
+  ["Godot",        <SiGodotengine/>],
+  ["HTML",         <SiHtml5/>],
+  ["iOS",          <SiApple/>],
+  ["JavaScript",   <SiJavascript/>],
+  ["Kubernetes",   <SiKubernetes/>],
+  ["Lua",          <SiLua/>],
+  ["MacOS",        <SiApple/>],
+  ["NodeJS",       <SiNodedotjs/>],
+  ["Photoshop",    <SiAdobephotoshop/>],
+  ["Powershell",   <SiPowershell/>],
+  ["Prometheus",   <SiPrometheus/>],
+  ["Python",       <SiPython/>],
+  ["React",        <SiReact/>],
+  ["React-Native", <SiReact/>],
+  ["Rust",         <SiRust/>],
+  ["Sketch",       <SiSketch/>],
+  ["Swift",        <SiSwift/>],
+  ["TypeScript",   <SiTypescript/>],
+  ["Unity",        <SiUnity/>],
+  ["VisualStudio", <SiVisualstudio/>],
+  ["Xcode",        <SiXcode/>],
+  ["YubiKey",      <SiYubico/>],
+]);
 
 export default function App() {
-  const { classes } = useStyles()
-
   //builds json information into objects
   var arr: Array<JSX.Element> = []
   for (const [, obj] of Object.entries(jsonData)) {
@@ -52,37 +114,34 @@ export default function App() {
   for (const [, obj] of Object.entries(jsonGuideData)) {
     guideArr.push(<GuideDisplay project={obj}/>)
   }
+
+  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+    key: 'mantine-color-scheme',
+    defaultValue: 'light',
+    getInitialValueInEffect: true,
+  });
+
+  const toggleColorScheme = (value?: ColorScheme) =>
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+    
   
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme: 'dark'}}>
-      <BioSection/>
-      <Tabs defaultValue="projects" color="green" mt="xs">
-        <Center>
-        <Tabs.List grow position="center" w={{sm: "50%", base: "90%"}} mb="sm">
-          <Tabs.Tab value='projects'>Projects</Tabs.Tab>
-          <Tabs.Tab value='guides'>Guides</Tabs.Tab>
-        </Tabs.List>
+    <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+      <MantineProvider withGlobalStyles withNormalizeCSS
+      theme={{colorScheme
+      }}>
+        <BioSection/>
+        <ExperienceSection/>
+        <Tabs defaultValue="projects" color={colorScheme === "dark" ? "violet.3" : "green"} mt="xs" pb="lg">
+          <Center>
+          <Tabs.List grow position="center" w={{sm: "50%", base: "90%"}} mb="sm">
+            <Tabs.Tab value='projects'>Projects</Tabs.Tab>
+            <Tabs.Tab value='guides'>Guides</Tabs.Tab>
+          </Tabs.List>
 
-        </Center>
-
-        <Tabs.Panel value="projects">
-          <Flex
-            mih={50}
-            gap="md"
-            justify="center"
-            align="flex-start"
-            direction="row"
-            wrap="wrap"
-          >
-            {arr}
-          </Flex>
-        </Tabs.Panel>
-
-        <Tabs.Panel value="guides">
-          <Center mb="sm">
-            This is just as much for myself as it is for anyone else :D
           </Center>
-          <Container pb="lg" w="100%">
+
+          <Tabs.Panel value="projects">
             <Flex
               mih={50}
               gap="md"
@@ -91,11 +150,26 @@ export default function App() {
               direction="row"
               wrap="wrap"
             >
-              {guideArr}
+              {arr}
             </Flex>
-          </Container>
-        </Tabs.Panel>
-      </Tabs>
-    </MantineProvider>
+          </Tabs.Panel>
+
+          <Tabs.Panel value="guides">
+            <Container pb="lg" w="100%">
+              <Flex
+                mih={50}
+                gap="md"
+                justify="center"
+                align="flex-start"
+                direction="row"
+                wrap="wrap"
+              >
+                {guideArr}
+              </Flex>
+            </Container>
+          </Tabs.Panel>
+        </Tabs>
+      </MantineProvider>
+    </ColorSchemeProvider>
   );
 }

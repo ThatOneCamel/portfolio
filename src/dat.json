@@ -1,14 +1,14 @@
 {
     "XIVLauncher-YubiKey":
         {
-        "title": "XIVLauncher - YubiKey Integration",
+        "title": "XIVLauncher + YubiKey",
         "flavorText": "Instant login, now Open Source",
         
         "badge":
             {
-            "status": "Finished",
-            "color": "green",
-            "variant": "light"
+            "status": "Ongoing",
+            "color": "violet",
+            "variant": "outline"
             },
 
         "description": 
@@ -21,10 +21,17 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/totp-yubikey", "color": "green"}
             ],
 
-        "time": "2023"
+        "time": "2023 - Present",
+        "tags":
+            [
+                "DotNet",
+                "CSharp",
+                "YubiKey",
+                "Final Fantasy XIV"
+            ]
         },
 
     "YubiKey":
@@ -50,10 +57,54 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/FFXIVQuickLauncher/tree/ykman-totp", "color": "green"}
             ],
 
-        "time": "2022 - Current"
+        "time": "2022",
+        "tags":
+            [
+                "Powershell",
+                "Python",
+                "YubiKey",
+                "Final Fantasy XIV"
+            ]
+        },
+
+    "Critiq":
+        {
+        "title": "Critiq",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in Angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/critiqBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "green"},
+                {"text": "Website", "link": "https://critiq.tv/", "color":"light"}
+            ],
+        
+        "time": "2020 - 2023",
+        "tags":
+            [
+                "Angular",
+                "TypeScript",
+                "JavaScript",
+                "REST API"
+            ]
+
         },
 
     "ModTheSims":
@@ -79,7 +130,13 @@
 
         "buttons":
             [
-                {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "gray"}
+                {"text": "ModTheSims", "link": "https://modthesims.info/d/617560/deadly-werewolves-update.html", "color": "violet"}
+            ],
+        "time": "2018 - Present",
+        "tags":
+            [
+                "Lua",
+                "The Sims 2"
             ]
 
         },
@@ -104,39 +161,16 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "gray"}
-            ]
-
-        
-        },
-
-    "Critiq":
-        {
-        "title": "Critiq",
-        "flavorText": "A tool to help rank your favorite films",
-        
-        "badge":
-            {
-            "status": "Finished",
-            "color": "green",
-            "variant": "light"
-            },
-
-        "description": 
-            [
-            "Website made in Angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/SchedulePlanning", "color": "green"}
             ],
-        "image": "/assets/critiqBanner.png",
-
-        "buttons":
+        "time": "2018",
+        "tags":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "gray"},
-                {"text": "Website", "link": "https://critiq.tv/", "color":"cyan"}
+                "Java",
+                "Firebase",
+                "Android"
             ]
 
-        
         },
 
     "CritiqLogic":
@@ -161,7 +195,13 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/boxdScrape", "color": "green"}
+            ],
+        "time": "2020 - 2023",
+        "tags":
+            [
+                "REST API",
+                "Python"
             ]
 
         },
@@ -180,6 +220,7 @@
 
         "description": 
             [
+            "A React-Native mobile app that allows user to take pictures of receipts and have the text be automatically parsed and put into an editable format.\n\n",
             "My work on this project consisted of the following:\nAdding image upload functionality on the clientside\n\n",
             "Creating a server and REST API\n\nManaging the uploading and processing of images\n\n",
             "Handling requests and responses between the server and client."
@@ -188,9 +229,17 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
-            ]
+                {"text": "GitHub", "link": "https://github.com/USM-GROUP/ML-Receipt-Reader", "color": "green"}
+            ],
 
+        "time": "2020",
+        "tags":
+            [
+                "React-Native",
+                "JavaScript",
+                "Python",
+                "REST API"
+            ]
         
         },
 
@@ -215,10 +264,16 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "gray"},
-                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "orange"}
-            ]
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Mult.io/tree/singleplayer", "color": "green"},
+                {"text": "Play Store", "link": "https://play.google.com/store/apps/details?id=efx.com.multio&hl=en_US&gl=US", "color": "light"}
+            ],
 
+        "time": "2019 - 2020",
+        "tags":
+            [
+                "Java",
+                "Android"
+            ]
         
         },
 
@@ -243,7 +298,14 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble", "color": "green"}
+            ],
+
+        "time": "2019 - 2021",
+        "tags":
+            [
+                "Python",
+                "REST API"
             ]
 
         
@@ -269,10 +331,16 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "gray"}
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Tumble/tree/Tweety", "color": "green"}
+            ],
+
+        "time": "2021",
+        "tags":
+            [
+                "Python",
+                "REST API"
             ]
 
-        
         },
 
     "ThisSite":
@@ -296,9 +364,17 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "gray"}
-            ]
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/portfolio", "color": "green"}
+            ],
 
+        "time": "2023 - Present",
+        "tags":
+            [
+                "React",
+                "TypeScript",
+                "HTML",
+                "CSS"
+            ]
         
         },
 
@@ -322,9 +398,15 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "gray"}
-            ]
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Quack", "color": "green"}
+            ],
 
+        "time": "2018",
+        "tags":
+            [
+                "Swift",
+                "MacOS"
+            ]
         
         },
 
@@ -348,10 +430,15 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "gray"}
+            ],
+
+        "time": "2017",
+        "tags":
+            [
+                "CSharp",
+                "Unity"
             ]
 
-        
         },
 
     "ALovelyTale":
@@ -368,16 +455,21 @@
 
         "description": 
             [
-            "First attempt at game development. Developed using Unity, face off against 100 opponents in a gauntlet of turn-based battles. ",
+            "Developed using Unity, face off against 100 opponents in a gauntlet of turn-based battles. ",
             "This game prioritized mobile devices and was designed to reflect that."
             ],
         "image": "/assets/lovely.png",
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "gray"}
-            ]
+            ],
 
+        "time": "2017",
+        "tags":
+            [
+                "CSharp",
+                "Unity"
+            ]
         
         },
 

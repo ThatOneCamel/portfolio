@@ -16,7 +16,7 @@ const LinkButton = (props: ButtonData)  => {
                 href={props.link}
                 fz="lg"
                 color={props.color}
-                variant="subtle"
+                variant="filled"
                 leftIcon={props.icon}
                 size="md"
                 radius="xs"

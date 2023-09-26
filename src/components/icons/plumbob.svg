@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="188px" viewBox="0 0 88 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Plumbob</title>
+    <g id="Page-1" stroke="current" stroke-width="1" fill="current" fill-rule="evenodd">
+        <g id="Plumbob">
+            <path d="M44,4.71764754 L84.8555692,92 L3.14443077,92 L44,4.71764754 Z" id="Triangle" stroke-width="4"></path>
+            <path d="M44,98.7176475 L84.8555692,186 L3.14443077,186 L44,98.7176475 Z" id="Triangle" stroke-width="4" transform="translate(44.000000, 141.000000) scale(1, -1) translate(-44.000000, -141.000000) "></path>
+            <path d="M44,8.77637701 L63.4778692,92 L24.5221308,92 L44,8.77637701 Z" id="Triangle" stroke-width="4"></path>
+            <path d="M44,102.776377 L63.4778692,186 L24.5221308,186 L44,102.776377 Z" id="Triangle" stroke-width="4" transform="translate(44.000000, 141.000000) scale(1, -1) translate(-44.000000, -141.000000) "></path>
+            <line x1="1.5" y1="93.5" x2="86.5" y2="93.5" id="Line" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
