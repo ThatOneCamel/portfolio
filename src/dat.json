@@ -70,6 +70,43 @@
             ]
         },
 
+    "Critiq":
+        {
+        "title": "Critiq",
+        "flavorText": "A tool to help rank your favorite films",
+        
+        "badge":
+            {
+            "status": "Finished",
+            "color": "green",
+            "variant": "light"
+            },
+
+        "description": 
+            [
+            "Website made in Angular to rank films side by side until ",
+            "an order is established from most-liked to least-liked films. ",
+            "Made by request of T.P."
+            ],
+        "image": "/assets/critiqBanner.png",
+
+        "buttons":
+            [
+                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "green"},
+                {"text": "Website", "link": "https://critiq.tv/", "color":"light"}
+            ],
+        
+        "time": "2020 - 2023",
+        "tags":
+            [
+                "Angular",
+                "TypeScript",
+                "JavaScript",
+                "REST API"
+            ]
+
+        },
+
     "ModTheSims":
         {
         "title": "The Sims 2 - Mods",
@@ -136,43 +173,6 @@
 
         },
 
-    "Critiq":
-        {
-        "title": "Critiq",
-        "flavorText": "A tool to help rank your favorite films",
-        
-        "badge":
-            {
-            "status": "Finished",
-            "color": "green",
-            "variant": "light"
-            },
-
-        "description": 
-            [
-            "Website made in Angular to rank films side by side until ",
-            "an order is established from most-liked to least-liked films. ",
-            "Made by request of T.P."
-            ],
-        "image": "/assets/critiqBanner.png",
-
-        "buttons":
-            [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/MovieRank", "color": "green"},
-                {"text": "Website", "link": "https://critiq.tv/", "color":"light"}
-            ],
-        
-        "time": "2020 - 2023",
-        "tags":
-            [
-                "Angular",
-                "TypeScript",
-                "JavaScript",
-                "REST API"
-            ]
-
-        },
-
     "CritiqLogic":
         {
         "title": "Critiq - Server Side Code",
@@ -220,6 +220,7 @@
 
         "description": 
             [
+            "A React-Native mobile app that allows user to take pictures of receipts and have the text be automatically parsed and put into an editable format.\n\n",
             "My work on this project consisted of the following:\nAdding image upload functionality on the clientside\n\n",
             "Creating a server and REST API\n\nManaging the uploading and processing of images\n\n",
             "Handling requests and responses between the server and client."
@@ -429,7 +430,6 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/Emblem", "color": "green"}
             ],
 
         "time": "2017",
@@ -462,7 +462,6 @@
 
         "buttons":
             [
-                {"text": "GitHub", "link": "https://github.com/ThatOneCamel/A-Lovely-Tale", "color": "green"}
             ],
 
         "time": "2017",
