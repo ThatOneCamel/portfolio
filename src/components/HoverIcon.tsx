@@ -34,5 +34,5 @@ const HoverIcon = (props: IconData) => {
     </Popover>
   );
 };
-export type { IconData };
+
 export default HoverIcon;

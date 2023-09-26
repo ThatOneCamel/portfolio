@@ -5,6 +5,7 @@ import ProjectDisplay from "./components/ProjectDisplay";
 import jsonData from "./dat.json";
 import jsonGuideData from "./guides_dat.json";
 import BioSection from './components/Bio';
+import ExperienceSection from './components/Experience';
 import GuideDisplay from './components/GuideDisplay';
 
 import { ReactComponent as Dalamud } from './components/icons/dalamud.svg';
@@ -67,13 +68,13 @@ export const iconMap = new Map<string, JSX.Element>([
   ["Android",      <SiAndroid/>],
   ["Angular",      <SiAngular/>],
   ["Azure",        <SiMicrosoftazure/>],
-  ["C",            <SiC/>],
+  ["C",            <SiC title="C programming language" size="2em"/>],
   ["Cpp",          <SiCplusplus/>],
   ["CSharp",       <SiCsharp/>],
   ["CSS",          <SiCss3/>],
   ["Django",       <SiDjango/>],
   ["Docker",       <SiDocker/>],
-  ["DotNet",       <SiDotnet size="24"/>],
+  ["DotNet",       <SiDotnet size="1.8em"/>],
   ["Firebase",     <SiFirebase/>],
   ["Git",          <SiGit/>],
   ["Go",           <SiGo/>],
@@ -122,12 +123,16 @@ export default function App() {
 
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+    
   
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-      <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme}}>
+      <MantineProvider withGlobalStyles withNormalizeCSS
+      theme={{colorScheme
+      }}>
         <BioSection/>
-        <Tabs defaultValue="projects" color="green" mt="xs" pb="lg">
+        <ExperienceSection/>
+        <Tabs defaultValue="projects" color={colorScheme === "dark" ? "violet.3" : "green"} mt="xs" pb="lg">
           <Center>
           <Tabs.List grow position="center" w={{sm: "50%", base: "90%"}} mb="sm">
             <Tabs.Tab value='projects'>Projects</Tabs.Tab>
@@ -150,9 +155,6 @@ export default function App() {
           </Tabs.Panel>
 
           <Tabs.Panel value="guides">
-            <Center m="sm">
-              This is just as much for myself as it is for anyone else :D
-            </Center>
             <Container pb="lg" w="100%">
               <Flex
                 mih={50}
