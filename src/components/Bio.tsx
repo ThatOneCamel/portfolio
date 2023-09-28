@@ -86,7 +86,7 @@ export default function BioSection() {
                 borderStyle: "solid",
                 borderRadius: "50%",
               }}
-              src="/assets/avatar.png"
+              src="https://avatars.githubusercontent.com/u/42787639?v=4"
               radius={300}
               fit="cover"
             />
@@ -109,7 +109,7 @@ export default function BioSection() {
             size={45}
             weight={800}
             ta={{ base: "center", sm: "left" }}>
-            (ThatOne)Camel
+            Cam
           </Title>
 
           <Title ta={{ base: "center", sm: "left" }} fw={600} order={4} mt={0}>
@@ -128,6 +128,20 @@ export default function BioSection() {
             <Group spacing={5}>
               <LabeledIcon name="University" icoSize="15px"></LabeledIcon>
               <Text>2016-2020 B.S. in Computer Science</Text>
+            </Group>
+            <UnstyledButton
+              component="a"
+              href="https://github.com/ThatOneCamel"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Group spacing={5}>
+                <LabeledIcon name="GitHub" icoSize="15px"></LabeledIcon>
+                <Text>GitHub: ThatOneCamel</Text>
+              </Group>
+            </UnstyledButton>
+            <Group spacing={5}>
+              <LabeledIcon name="Email" icoSize="15px"></LabeledIcon>
+              <Text component="a" href="mailto:me@thatonecamel.com">me@thatonecamel.com</Text>
             </Group>
           </Stack>
 

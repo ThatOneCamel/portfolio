@@ -14,6 +14,7 @@ import { ReactComponent as Plumbob } from './components/icons/plumbob.svg';
 import {
   FaBuildingColumns,
   FaCloud,
+  FaEnvelope,
   FaJava,
   FaRegBuilding
   } from "react-icons/fa6";
@@ -32,6 +33,7 @@ import {
   SiDotnet,
   SiFirebase,
   SiGit,
+  SiGithub,
   SiGrafana,
   SiGo,
   SiGodotengine,
@@ -75,8 +77,10 @@ export const iconMap = new Map<string, JSX.Element>([
   ["Django",       <SiDjango/>],
   ["Docker",       <SiDocker/>],
   ["DotNet",       <SiDotnet size="1.8em"/>],
+  ["Email",        <FaEnvelope/>],
   ["Firebase",     <SiFirebase/>],
   ["Git",          <SiGit/>],
+  ["GitHub",       <SiGithub/>],
   ["Go",           <SiGo/>],
   ["Grafana",      <SiGrafana/>],
   ["Godot",        <SiGodotengine/>],
