@@ -123,7 +123,7 @@ export default function BioSection() {
           <Stack spacing={2}>
             <Group spacing={5}>
               <LabeledIcon name="Office" icoSize="15px"></LabeledIcon>
-              <Text mx={0}>3+ years professional experience</Text>
+              <Text mx={0}>5+ years professional experience</Text>
             </Group>
             <Group spacing={5}>
               <LabeledIcon name="University" icoSize="15px"></LabeledIcon>
